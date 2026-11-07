@@ -5,3 +5,6 @@
 .animal.snake{aspect-ratio:366/414;background-size:201.0929% 197.343%;background-position:100% 0}
 .animal.badger{aspect-ratio:358/395;background-size:205.5866% 206.8354%;background-position:0 100%}
 .animal.eagle{aspect-ratio:366/395;background-size:201.0929% 206.8354%;background-position:100% 100%}
+nav{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px}nav a{color:#655079;padding:9px 13px;background:#fffdf9;border:1px solid #ded4e5;border-radius:12px;text-decoration:none}textarea{width:100%;max-width:100%;font:inherit;color:inherit;padding:12px;border:1px solid #d9cede;border-radius:12px}dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px}dt{font-weight:650}dd{margin:0}.wand{width:min(350px,100%);aspect-ratio:1;background-image:url('wands.png');background-size:200% 200%;border-radius:24px;margin:20px auto}.wand-0{background-position:0 0}.wand-1{background-position:100% 0}.wand-2{background-position:0 100%}.wand-3{background-position:100% 100%}
+dl{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}dd,dt{overflow-wrap:anywhere}.card{overflow-wrap:break-word}
+@media(max-width:350px){dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:10px}}
