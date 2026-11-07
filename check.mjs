@@ -17,7 +17,7 @@ for(const width of [390,280]){
  const winner=await page.locator('.result-animal').getAttribute('aria-label');
  await page.reload();assert.equal(await page.locator('.result-animal').getAttribute('aria-label'),winner);
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Horizontal overflow');
- assert(await page.evaluate(async()=>{const i=new Image();i.src='animals.png';await i.decode();return i.naturalWidth>0;}));
+ assert(await page.evaluate(async()=>{const i=new Image();i.src='animals-original.jpg';await i.decode();return i.naturalWidth>0;}));
  await page.screenshot({path:`/tmp/afdeling-${width}.png`,fullPage:true});
  await page.getByRole('button',{name:'Mijn antwoorden bekijken'}).click();assert.equal(await page.locator('#choices h2').count(),12);
  await page.getByRole('button',{name:'Terug naar mijn diertje'}).click();
